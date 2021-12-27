@@ -1,0 +1,96 @@
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 425px;
+
+    .illustration-hero {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    h2 {
+        font-weight: var(--fw-3);
+        color: var(--clr-neutral-3);
+    }
+
+    p {
+        width: 25ch;
+        text-align: center;
+        color: var(--clr-neutral-2);
+    }
+
+    @media screen and (min-width: 476px) {
+        padding: 2.5rem 2rem;
+    }
+}
+
+.flow > * + * {
+    margin-top: 1.5rem;
+}
+
+.plan {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--clr-neutral-1);
+    border-radius: 10px;
+    padding: 1rem;
+
+    .plan_type {
+        font-weight: var(--fw-3); 
+    }
+
+    .price {
+        color: var(--clr-neutral-2); 
+        font-weight: var(--fw-2);
+    }
+
+    a {
+        align-self: center;
+        margin-left: auto;
+        text-decoration-color: var(--clr-primary-2);
+
+        &:hover {
+            text-decoration: none;
+            color: var(--clr-primary-2);
+            opacity: 0.8;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: var(--clr-primary-2);
+    color: white;
+    border-radius: 10px;
+    padding: 0.75rem 5rem;
+    border: 0;
+    font-weight: var(--fw-2);
+    box-shadow: 2px 5px 18px var(--clr-primary-2);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--clr-primary-2);
+        opacity: 0.6;
+    }
+}
+
+.btn-secondary {
+    margin-top: 1rem;
+    background-color: rgba(255,255,255,0.2);
+    color: var(--clr-neutral-2);
+    font-weight: var(--fw-3); 
+
+    &:hover {
+        cursor: pointer;
+        color: var(--clr-neutral-3);
+    }
+}
